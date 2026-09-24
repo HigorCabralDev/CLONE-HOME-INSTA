@@ -1,23 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
+    <div class="topo">
+      <header class="container">
+        <button id="btnTema" class="btn" type="button">🌙Tema escuro</button>
+      </header>
+    </div>
     <main>
-      <div class="main-container">
+      <div id="main-container">
         <!-- Banner Container -->
-        <div class="banner-container">
-          <img src="img/banner2.png" alt="Crie uma conta no Istagram" />
+        <div id="banner-container">
+          <img src="img/banner2.png" alt="Crie uma conta no Instagram" />
         </div>
         <!-- Login e Registro -->
         <div id="form-container">
           <div id="form-box">
-            <img src="img/logo_instagram.png" alt="Istagram" />
+            <img id="logo-insta" src="img/logo_instagram.png" alt="Istagram" />
             <form id="login-form">
               <input
                 type="text"
@@ -28,28 +34,45 @@
               <input type="submit" value="Entrar" />
             </form>
             <div class="separator">
-              <div class="lin"></div>
+              <div class="line"></div>
               <span>Ou</span>
             </div>
             <div id="other-links">
               <div id="facebook-login">
-                <img src="img/logo_facebook.svg" alt="Facebook Login" />
-                <span>Entrar com o Facebook</span>
+                <a href="https://www.facebook.com/login/?locale=pt_BR"
+                  ><img src="img/logo_facebook.svg" alt="Facebook Login" />
+                  <span>Entrar com o Facebook</span></a
+                >
               </div>
               <div id="forgot-pass">
-                <a href="#">Esqueceu a senha?</a>
+                <a href="https://www.instagram.com/accounts/password/reset/"
+                  >Esqueceu a senha?</a
+                >
               </div>
             </div>
           </div>
           <div id="register-container">
-            <p>Não tem uma conta?<a href="#">Cadastre-se</a></p>
+            <p>
+              Não tem uma conta?
+              <a href="https://www.instagram.com/accounts/emailsignup/"
+                >Cadastre-se</a
+              >
+            </p>
           </div>
           <div id="get-app-container">
             <p>Obtenha o aplicativo.</p>
-            <a href="#">
+            <a
+              href="https://apps.apple.com/br/app/instagram/id389801252"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="img/apple_btn.png" alt="Apple Store" />
             </a>
-            <a href="#">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.instagram.android"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="img/gplay_btn.png" alt="Google Play" />
             </a>
           </div>
@@ -59,19 +82,63 @@
     <footer>
       <nav>
         <ul id="footer-links">
-          <li><a href="#">Meta</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Ajuda</a></li>
-          <li><a href="#">API</a></li>
-          <li><a href="#">Termos</a></li>
-          <li><a href="#">Principais Contas</a></li>
-          <li><a href="#">Hashtags</a></li>
-          <li><a href="#">Localização</a></li>
-          <li><a href="#">Instagram Lite</a></li>
+          <li>
+            <a
+              href="https://www.meta.com/pt-br/about/?utm_source=about.meta.com&utm_medium=redirect"
+              target="_blank"
+              >Meta</a
+            >
+          </li>
+          <li>
+            <a href="https://about.instagram.com/" target="_blank">Sobre</a>
+          </li>
+          <li>
+            <a href="https://about.instagram.com/blog/" target="_blank">Blog</a>
+          </li>
+          <li>
+            <a href="https://help.instagram.com/" target="_blank">Ajuda</a>
+          </li>
+          <li>
+            <a
+              href="https://developers.facebook.com/documentation/instagram-platform"
+              target="_blank"
+              >API</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://help.instagram.com/581066165581870/"
+              target="_blank"
+              >Termos</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect"
+              target="_blank"
+              >Principais Contas</a
+            >
+          </li>
+          <li><a href="#" target="_blank">Hashtags</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/explore/locations/"
+              target="_blank"
+              >Localização</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/web/lite/" target="_blank"
+              >Instagram Lite</a
+            >
+          </li>
         </ul>
       </nav>
       <p id="copyright">&copy;2026 Instagram From Meta</p>
+      <p class="aviso-projeto">
+        Projeto desenvolvido para fins educacionais. Esta página não é afiliada
+        ao Instagram ou à Meta.
+      </p>
     </footer>
   </body>
 </html>
