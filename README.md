@@ -36,11 +36,11 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais e não possu
 
 ### ☀️ Tema claro
 
-![Tema claro](CLONE_HOME_INSTA/img/tema-claro.png)
+![Tema claro](img/tema-claro.png)
 
 ### 🌙 Tema escuro
 
-![Tema escuro](CLONE_HOME_INSTA/img/tema-escuro.png)
+![Tema escuro](img/tema-escuro.png)
 
 ---
 
