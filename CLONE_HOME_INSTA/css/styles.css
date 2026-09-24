@@ -7,7 +7,61 @@
 }
 
 body{
-    background-color: #fafafa;
+    background-color: var(--bg);
+    color: var(--texto);
+}
+
+/* TEMA */
+
+:root {
+    --bg: #fafafa;
+    --texto: #111111;
+    --borda: #dbdbdb;
+    --caixa: #ffffff;
+    --input: #fafafa;
+    --acao: #0095f6;
+    --link: #385185;
+    --secundario: #8e8e8e;
+}
+
+[data-tema="escuro"] {
+    --bg: #121212;
+    --texto: #f5f5f5;
+    --borda: #363636;
+    --caixa: #1c1c1c;
+    --input: #262626;
+    --acao: #0095f6;
+    --link: #53bdeb;
+    --secundario: #a8a8a8;
+}
+
+
+/* btnTema*/
+
+.topo{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
+}
+
+#btnTema{
+    background-color: var(--caixa);
+    color: var(--texto);
+    border: 1px solid var(--borda);
+    border-radius: 30px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: 0.3s ease;
+}
+
+#btnTema:hover{
+    opacity: 0.8;
 }
 
 /* CONTAINERS */
@@ -41,13 +95,16 @@ body{
 /* LOGIN FORM */
 
 #form-box{
-    background-color: #fff;
-    border: 1px solid #DBDBDB;
+    background-color: var(--caixa);
+    border: 1px solid var(--borda);
     width: 350px;
     margin-top: 30px;
 }
+[data-tema="escuro"] #logo-insta {
+    filter: brightness(0) invert(1);
+}
 
-#logo-insta{
+#logo-insta {
     width: 175px;
     height: 51px;
     margin: 30px auto 12px;
@@ -61,15 +118,16 @@ body{
     display: block;
     font-size: 12px;
     padding: 12px 9px;
-    background-color: #fafafa;
-    border: 1px solid #dbdbdb;
+    background-color: var(--input);
+    color: var(--texto);
+    border: 1px solid var(--texto);
     border-radius: 3px;
     width: 268px;
     margin: 5px auto;
 }
 
 #login-form input[type="submit"]{
-    background-color: #b2dffc;
+    background-color: var(--acao);
     color: #fff;
     margin-top: 15px;
     border-radius: 5px;
@@ -85,7 +143,7 @@ body{
     position: relative;
 }
 .line{
-    border-top: 1px solid #dbdbdb;
+    border-top: 1px solid var(--borda);
     width: 268px;
     margin: 25px auto 35px;
 }
@@ -93,8 +151,8 @@ body{
 .separator span{
     position: absolute;
     text-transform: uppercase;
-    color: #bbb;
-    background-color: #fff;
+    color: var(--secundario);
+    background-color: var(--caixa);
     top: -6px;
     width: 50px;
     margin-left: -25px;
@@ -108,7 +166,7 @@ body{
 
 #facebook-login a{
     text-decoration: none;
-    color: #385185;
+    color: var(--link);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,13 +192,13 @@ body{
 
 #forgot-pass a{
     text-decoration: none;
-    color: #373799;
+    color: var(--link);
 }
 
 /* REGISTER */
 #register-container{
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
+    background-color: var(--caixa);
+    border: 1px solid var(--borda);
     width: 350px;
     margin-top: 10px;
     padding: 25px;
@@ -148,11 +206,11 @@ body{
 
 #register-container p{
     font-size: 14px;
-    color: #262626;
+    color: var(--texto);
 }
 
 #register-container a{
-    color: #4a95f6;
+    color: var(--acao);
     font-weight: bold;
     text-decoration: none;
 }
@@ -201,7 +259,7 @@ footer #footer-links {
 #footer-links a, 
 #copyright{
     text-decoration: none;
-    color: #8e8e8e;
+    color: var(--secundario);
     font-size: 12px;
 }
 
@@ -209,11 +267,18 @@ footer #footer-links {
     margin-top: 10px;
 }
 
+.aviso-projeto {
+  font-size: 11px;
+  color: var(--secundario);
+  text-align: center;
+  margin-top: 10px;
+}
+
 /* MOBILE */
 
 @media(max-width: 450px){
     body{
-        background-color: #fff;
+        background-color:var(--bg);
     }
 
     #banner-container{
@@ -251,7 +316,7 @@ footer #footer-links {
 /* TABLET */
 @media (max-width: 1024px){
     body{
-        background-color: #fff;
+        background-color:var(--bg);
     }
 
     #banner-container{
