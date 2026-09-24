@@ -29,19 +29,7 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais e não possu
 * **JavaScript:** Implementação da alternância entre tema claro e escuro.
 * **Flexbox:** Organização e alinhamento dos elementos.
 * **Media Queries:** Adaptação da interface para diferentes tamanhos de tela.
-
----
-
-## 📸 Prévia do projeto
-
-### ☀️ Tema claro
-
-![Tema claro](img/tema-claro.png)
-
-### 🌙 Tema escuro
-
-![Tema escuro](img/tema-escuro.png)
-
+  
 ---
 
 ## 📂 Estrutura do projeto
