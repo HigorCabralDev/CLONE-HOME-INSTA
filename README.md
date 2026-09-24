@@ -32,7 +32,7 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais e não possu
 
 ---
 
-## 📷 Prévia do projeto
+## 📸 Prévia do projeto
 
 ### ☀️ Tema claro
 
@@ -40,7 +40,7 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais e não possu
 
 ### 🌙 Tema escuro
 
-![Tema escuro](img/tema-escuro.png)
+![Tema escuro](CLONE_HOME_INSTA/img/tema-escuro.png)
 
 ---
 
