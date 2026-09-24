@@ -36,11 +36,11 @@ Este projeto foi desenvolvido exclusivamente para fins educacionais e não possu
 
 ### ☀️ Tema claro
 
-![Prévia do tema claro](img/tema-claro.png)
+![Tema claro](img/tema-claro.png)
 
 ### 🌙 Tema escuro
 
-![Prévia do tema escuro](img/tema-escuro.png)
+![Tema escuro](img/tema-escuro.png)
 
 ---
 
